@@ -2,13 +2,12 @@ from rest_framework import status, generics, permissions
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.authtoken.models import Token
-from rest_framework.authtoken.views import ObtainAuthToken
 from django.contrib.auth import get_user_model
 from django.shortcuts import get_object_or_404
 
 from users.models import Student, Educator
 from users.serializers.user_serializers import (
-    UserSerializer, UserRegistrationSerializer, StudentSerializer,
+    UserLoginSerializer, UserSerializer, UserRegistrationSerializer, StudentSerializer,
     EducatorSerializer, EducatorRegistrationSerializer
 )
 
@@ -53,8 +52,10 @@ class EducatorRegistrationView(generics.CreateAPIView):
             }, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-class CustomAuthToken(ObtainAuthToken):
+class CustomAuthToken(generics.CreateAPIView):
     """Custom token authentication view with user details."""
+    serializer_class = UserLoginSerializer
+    permission_classes = [permissions.AllowAny]
     
     def post(self, request, *args, **kwargs):
         serializer = self.serializer_class(data=request.data, context={'request': request})
