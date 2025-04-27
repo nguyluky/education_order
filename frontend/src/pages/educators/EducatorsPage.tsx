@@ -281,7 +281,7 @@ const EducatorsPage: React.FC = () => {
                         <div className="mt-4 flex justify-end">
                           <Link
                             to={`/educators/${educator.id}`}
-                            className="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+                            className="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium  bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
                           >
                             View Profile
                           </Link>
@@ -298,7 +298,7 @@ const EducatorsPage: React.FC = () => {
               <p className="text-gray-500 mb-4">Try adjusting your filters to find educators.</p>
               <button
                 onClick={resetFilters}
-                className="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+                className="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium  bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
               >
                 Reset Filters
               </button>

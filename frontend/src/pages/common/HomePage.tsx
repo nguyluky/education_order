@@ -155,7 +155,7 @@ const HomePage: React.FC = () => {
             <div className="text-center mt-8">
               <Link
                 to="/subjects"
-                className="px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
+                className="px-6 py-3 bg-primary-600  font-medium rounded-lg hover:bg-primary-700 transition-colors"
               >
                 View All Subjects
               </Link>
@@ -164,7 +164,7 @@ const HomePage: React.FC = () => {
             <div className="text-center mt-8">
               <Link
                 to="/register"
-                className="px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
+                className="px-6 py-3 bg-primary-600  font-medium rounded-lg hover:bg-primary-700 transition-colors"
               >
                 Sign Up to Explore More
               </Link>

@@ -143,7 +143,7 @@ const RegisterPage: React.FC = () => {
             onClick={() => setUserType('student')}
             className={`px-4 py-2 text-sm font-medium border rounded-l-lg ${
               userType === 'student'
-                ? 'bg-primary-600 text-white border-primary-600'
+                ? 'bg-primary-600  border-primary-600'
                 : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'
             }`}
           >
@@ -154,7 +154,7 @@ const RegisterPage: React.FC = () => {
             onClick={() => setUserType('educator')}
             className={`px-4 py-2 text-sm font-medium border rounded-r-lg ${
               userType === 'educator'
-                ? 'bg-primary-600 text-white border-primary-600'
+                ? 'bg-primary-600  border-primary-600'
                 : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'
             }`}
           >

@@ -163,7 +163,7 @@ const SessionDetailPage: React.FC = () => {
           <p className="text-gray-500 mb-4">The session you're looking for doesn't exist or has been removed.</p>
           <button
             onClick={() => navigate('/sessions')}
-            className="px-4 py-2 bg-primary-500 text-white rounded-md hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+            className="px-4 py-2 bg-primary-500  rounded-md hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
           >
             Back to Sessions
           </button>
@@ -368,7 +368,7 @@ const SessionDetailPage: React.FC = () => {
             {user?.user_type === 'student' && session.status === 'completed' && !session.rating && (
               <Link
                 to={`/sessions/${session.id}/rate`}
-                className="px-4 py-2 bg-primary-500 text-white rounded-md hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+                className="px-4 py-2 bg-primary-500  rounded-md hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
               >
                 Rate Session
               </Link>
@@ -377,7 +377,7 @@ const SessionDetailPage: React.FC = () => {
             {user?.user_type === 'student' && session.status === 'scheduled' && (
               <button
                 onClick={() => setShowCancelModal(true)}
-                className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                className="px-4 py-2 bg-red-500  rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
               >
                 Cancel Session
               </button>
@@ -388,13 +388,13 @@ const SessionDetailPage: React.FC = () => {
               <>
                 <button
                   onClick={() => handleSessionAction('accept')}
-                  className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                  className="px-4 py-2 bg-green-500  rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                 >
                   Accept Request
                 </button>
                 <button
                   onClick={() => setShowRejectModal(true)}
-                  className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                  className="px-4 py-2 bg-red-500  rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
                 >
                   Reject Request
                 </button>
@@ -405,13 +405,13 @@ const SessionDetailPage: React.FC = () => {
               <>
                 <button
                   onClick={() => handleSessionAction('complete')}
-                  className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                  className="px-4 py-2 bg-green-500  rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                 >
                   Mark as Completed
                 </button>
                 <button
                   onClick={() => setShowCancelModal(true)}
-                  className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                  className="px-4 py-2 bg-red-500  rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
                 >
                   Cancel Session
                 </button>
@@ -452,8 +452,8 @@ const SessionDetailPage: React.FC = () => {
                   disabled={!actionReason.trim()}
                   className={`px-4 py-2 ${
                     actionReason.trim() 
-                      ? 'bg-red-500 hover:bg-red-600 text-white' 
-                      : 'bg-red-300 text-white cursor-not-allowed'
+                      ? 'bg-red-500 hover:bg-red-600 ' 
+                      : 'bg-red-300  cursor-not-allowed'
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500`}
                 >
                   {loading ? 'Processing...' : 'Confirm Cancel'}
@@ -495,8 +495,8 @@ const SessionDetailPage: React.FC = () => {
                   disabled={!actionReason.trim()}
                   className={`px-4 py-2 ${
                     actionReason.trim() 
-                      ? 'bg-red-500 hover:bg-red-600 text-white' 
-                      : 'bg-red-300 text-white cursor-not-allowed'
+                      ? 'bg-red-500 hover:bg-red-600 ' 
+                      : 'bg-red-300  cursor-not-allowed'
                   } rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500`}
                 >
                   {loading ? 'Processing...' : 'Confirm Reject'}

@@ -151,7 +151,7 @@ const ProfilePage: React.FC = () => {
       
       <div className="bg-white shadow-md rounded-lg overflow-hidden">
         {/* Profile header with avatar */}
-        <div className="bg-primary-600 text-white p-6">
+        <div className="bg-primary-600  p-6">
           <div className="flex items-center">
             <div className="mr-4">
               {user.profile_picture ? (
@@ -358,7 +358,7 @@ const ProfilePage: React.FC = () => {
             <button
               type="submit"
               disabled={loading}
-              className={`px-6 py-2 border border-transparent rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 ${
+              className={`px-6 py-2 border border-transparent rounded-md shadow-sm  bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 ${
                 loading ? 'opacity-70 cursor-not-allowed' : ''
               }`}
             >

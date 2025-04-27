@@ -254,7 +254,7 @@ const SessionsPage: React.FC = () => {
                   {user?.user_type === 'student' && session.status === 'completed' && !session.rating && (
                     <Link
                       to={`/sessions/${session.id}/rate`}
-                      className="px-4 py-2 bg-primary-500 text-white rounded-md hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+                      className="px-4 py-2 bg-primary-500  rounded-md hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
                     >
                       Rate Session
                     </Link>
@@ -263,7 +263,7 @@ const SessionsPage: React.FC = () => {
                   {user?.user_type === 'student' && session.status === 'scheduled' && (
                     <button
                       onClick={() => handleSessionAction('cancel', session.id, 'Student canceled the session')}
-                      className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                      className="px-4 py-2 bg-red-500  rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
                     >
                       Cancel Session
                     </button>
@@ -274,13 +274,13 @@ const SessionsPage: React.FC = () => {
                     <>
                       <button
                         onClick={() => handleSessionAction('accept', session.id)}
-                        className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                        className="px-4 py-2 bg-green-500  rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                       >
                         Accept Request
                       </button>
                       <button
                         onClick={() => handleSessionAction('reject', session.id, 'Educator is not available')}
-                        className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                        className="px-4 py-2 bg-red-500  rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
                       >
                         Reject Request
                       </button>
@@ -291,13 +291,13 @@ const SessionsPage: React.FC = () => {
                     <>
                       <button
                         onClick={() => handleSessionAction('complete', session.id)}
-                        className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                        className="px-4 py-2 bg-green-500  rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                       >
                         Mark as Completed
                       </button>
                       <button
                         onClick={() => handleSessionAction('cancel', session.id, 'Educator canceled the session')}
-                        className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                        className="px-4 py-2 bg-red-500  rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
                       >
                         Cancel Session
                       </button>
@@ -332,7 +332,7 @@ const SessionsPage: React.FC = () => {
           {user?.user_type === 'student' && (activeTab === 'upcoming' || activeTab === 'pending') && (
             <Link
               to="/educators"
-              className="px-4 py-2 bg-primary-500 text-white rounded-md hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+              className="px-4 py-2 bg-primary-500  rounded-md hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
             >
               Find Educators
             </Link>

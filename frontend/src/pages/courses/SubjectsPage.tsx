@@ -173,7 +173,7 @@ const SubjectsPage: React.FC = () => {
                 
                 <Link
                   to={`/subjects/${subject.id}`}
-                  className="block w-full text-center py-2 px-4 bg-primary-500 text-white rounded-md hover:bg-primary-600 transition-colors"
+                  className="block w-full text-center py-2 px-4 bg-primary-500  rounded-md hover:bg-primary-600 transition-colors"
                 >
                   View Details
                 </Link>
